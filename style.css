@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  height: auto;
+  min-height: 30px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-item {
+  margin: 20px 40px;
+  padding: 5px;
+  list-style: none;
+}
+.active{
+    color:rgb(206, 206, 206) ;
+}
+.list-item a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.list-item a:hover {
+  color: rgb(206, 206, 206);
+}
+
+.home::before {
+  background-color: black;
+  content: "";
+  z-index: -1;
+}
+.first {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(web\ back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.second{
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-content > h1,
+h2,
+h5 {
+  color: white;
+  margin: 10px;
+}
+.home-content > h1{
+font-size: 2rem;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 250px 30px 30px 50px;
+  padding: 50px;
+  width: 50%;
+  height: 70%;
+ 
+  /* border: 1px solid black; */
+  border-radius: 12px;
+  animation: move 2s 1 ease-out;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 250px 30px 30px 50px;
+  padding: 50px;
+  width: 50%;
+  height: 70%;
+ 
+  /* border: 1px solid black; */
+  border-radius: 12px;
+  animation: move 2s 1 ease-out;
+}
+.home-content:hover {
+    background-color: rgb(148, 148, 148);
+    transition-duration: 2s;
+   
+}
+@keyframes move {
+  from {
+    margin: 0px 30px 30px -3000px;
+
+  }
+  to {
+    margin: 250px 30px 30px 50px;
+
+  }
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+  
+    padding: 10px;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+margin: 0;
+/* background-color: red; */
+}
+.copy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
